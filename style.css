@@ -10,3 +10,57 @@
     border-radius: 8px;
     box-shadow:0.3em 0.3em 1em rgb(20 20 20 / 40%);
 }
+
+
+
+#write-box-container {
+    display:flex;
+    justify-content: center;
+    margin:auto;
+    margin-bottom: 100px;
+    width: 80%;
+    margin-top: 20px;
+    padding: 50px;
+    box-shadow:0.3em 0.3em 1em rgb(20 20 20 / 40%);
+}
+
+#write-box {
+    resize: none;
+    border: 3px #333;
+    text-decoration: none;
+    margin: auto;
+    width: 80%;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+#option-panel {
+    margin: auto;
+    width: 80%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.fact-panel {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    text-align: center;
+    box-shadow:0.3em 0.3em 1em rgb(20 20 20 / 40%);
+    padding: 20px;
+    margin: 5px;
+    background: #fff;
+    border-radius: 10px;
+    border: none;
+}
+
+.option-button:hover {
+    color: #fff;
+    background: #333;
+}
+
+#write-box:focus {
+    outline: none;
+}
