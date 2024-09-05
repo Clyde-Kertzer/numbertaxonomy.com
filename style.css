@@ -1,0 +1,12 @@
+#header {
+    margin: auto;
+    width: 80%;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: #000;
+    border-radius: 8px;
+    box-shadow:0.3em 0.3em 1em rgb(20 20 20 / 40%);
+}
