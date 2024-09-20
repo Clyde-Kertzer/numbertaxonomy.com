@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MathSite</title>
         <link rel = "stylesheet" href = "style.css">
     </head>
     <body>
         <div id = "header">Number Taxonomy</div>
         <div id = "write-box-container">
-            <textarea placeholder = "Enter a number..." onkeyup="textAreaAdjust(this)" id = "write-box"></textarea>
+            <textarea placeholder = "Enter a number..." id = "write-box"></textarea>
         </div>
-        <div id = "option-panel">
-            <button class = "fact-panel">Fact</button>
-            <button class = "fact-panel">Fact</button>
-            <button class = "fact-panel">Fact</button>
-            <button class = "fact-panel">Fact</button>
+        <div id = "fact-panel-container">
+            <div class = "fact-panel" id = "prime-factor-panel">Prime Factors: </div>
+            <div class = "fact-panel">Fact</div>
+            <div class = "fact-panel">Fact</div>
+            <div class = "fact-panel">Fact</div>
         </div>
     </body>
-    <script src = "main.js"></script>
+    <script src = "src/main.js"></script>
 </html>
