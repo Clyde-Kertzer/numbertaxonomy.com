@@ -29,6 +29,6 @@ function to_string_prime_factors(factors) {
 
 function get_prime_factors(num) {
     const factors = [];
-    factors.push(3);
+    factors.push(9);
     return factors;
 }
