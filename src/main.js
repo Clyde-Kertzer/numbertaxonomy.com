@@ -29,8 +29,10 @@ function to_string_prime_factors(factors) {
 
 function get_prime_factors(num) {
     const factors = [];
-    for (let i = 0; i <= 10; i++) {
-        factors.push(i);
+    for (let i = 1; i <= 10; i++) {
+        if (num % i == 0) {
+            factors.push(i);
+        }
     }
     return factors;
 }
