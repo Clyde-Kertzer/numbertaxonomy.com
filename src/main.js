@@ -4,17 +4,22 @@ const prime_factor_panel = document.getElementById("prime-factor-panel")
 textarea.addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
 
-        event.preventDefault();  // Prevent default new line behavior
+        event.preventDefault();  
         const input = textarea.value;
         if (isInteger(input)) {
             number = parseInt(input)
-            prime_factor_panel.innerHTML += to_string_prime_factors(get_prime_factors(number));
+            update_prime_factor_text(number)
         }
         else {
             console.log("number not an integer");
         }
     }
 });
+
+function update_prime_factor_text(number) {
+    text = "Prime Factors: " + to_string_prime_factors(get_prime_factors(number));
+    prime_factor_panel.innerHTML = text;
+}
 
 function isInteger(input) {
     // Use trim() to remove any leading/trailing spaces and ensure it's a valid integer
