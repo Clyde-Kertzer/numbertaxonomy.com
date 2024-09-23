@@ -3,15 +3,11 @@ const prime_factor_panel = document.getElementById("prime-factor-panel")
 
 textarea.addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
-
         event.preventDefault();  
         const input = textarea.value;
         if (isInteger(input)) {
             number = parseInt(input)
             update_prime_factor_text(number)
-        }
-        else {
-            console.log("number not an integer");
         }
     }
 });
