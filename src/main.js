@@ -13,6 +13,9 @@ function update_number_property_panels(number) {
 function update_prime_factor_panel(number) {
     text = "Prime Factors: " + lst_string(num_engine.get_prime_factors(number));
     prime_factor_panel.innerHTML = text;
+
+    text = "Prime factor sum: " + (num_engine.sum_faactors(number)).toString()
+    prime_factor_sum_panel.innerHTML = text
 }
 
 function update_parity_panel(number) {
