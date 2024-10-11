@@ -1,6 +1,7 @@
 const textarea = document.getElementById('write-box');
 const prime_factor_panel = document.getElementById("prime-factor-panel")
 const parity_panel = document.getElementById("parity-panel")
+const prime_factor_sum_panel = document.getElementById("prime-factor-sum-panel")
 const evt_handler = new EventHandler();
 const num_engine = new NumberEngine();
 
